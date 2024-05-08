@@ -23,20 +23,23 @@ const Footer = () => {
             </div>
 
             <div className="contactDiv">
-              <span className="flex">
+              <div className="flex">
               <HiPhone  className='icon'/>
-              </span>
               <span>+94 76 6715014</span>
+              </div>
+              
 
-              <span className="flex">
+              <div className="flex">
               <MdEmail  className='icon'/>
-              </span>
               <span>mihirangasilva23@gmail.com</span>
+              </div>
+              
 
-              <span className="flex">
+              <div className="flex">
               <FaLocationArrow className='icon'/>
-              </span>
               <span>+94 76 6715014</span>
+              </div>
+              
             </div>
           </div>
 

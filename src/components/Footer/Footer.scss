@@ -31,19 +31,24 @@
                 .contactDiv{
                     display: grid;
                     gap: .5rem;
-                }
-                .flex{
-                    gap: .5rem;
 
-                    .icon{
-                        font-size: 15px;
-                        color: var(--primaryColor);
-                    }
-
-                    .span{
-                        font-size: 14px;
+                    .flex{
+                        gap: .5rem;
+                        padding-top: 1rem;
+    
+                        .icon{
+                            font-size: 15px;
+                            color: var(--primaryColor);
+                        }
+    
+                        span{
+                            font-size: 14px;
+                            font-weight: 600;
+                            opacity: .6;
+                        }
                     }
                 }
+                
                 .singleNews{
                     margin-bottom: 1rem;
 
@@ -112,18 +117,19 @@
 
 //media wuery
 
-@media screen and (min-width:574px) {
+@media screen and (min-width: 574px) {
+
     .footer{
         .secContainer{
             .content{
-                grid-template-columns: (3,1fr);
+                grid-template-columns: repeat(3,1fr);
                 align-items:start;
                 justify-content: center;
                 
                 .row{
                     margin: 0 auto;
                    .spanText{
-                    font-size: 14px;
+                        font-size: 14px;
                     }
                     .contactDiv{
                         display: grid;
@@ -142,7 +148,63 @@
                         }
                     }
 
+                    .singleNews{
+                        .text{
+                            font-size: 14px;
+                        }
+                        p{
+                            padding: 1rem 0 0 0;
+                        }
+                    }
+
+                    .footerLinks ul{
+                        li{
+                            font-size: 14px;
+                            cursor: pointer;
+                            padding: .5rem 0;
+                        }
+                    }
                 }
-        }
+            }
+            .BottomDiv{
+                flex-direction: row;
+            }
+
+    }
+}}
+
+@media screen and (min-width: 1024px) {
+    
+    .footer{
+        .secContainer{
+            .content{
+                .row{
+                   .spanText{
+                        font-size: 17px;
+                    }
+
+                    .flex{
+                        .icon{
+                            font-size: 18px;
+                        }
+
+                        span{
+                            font-size: 16px;
+                        }
+                    }
+
+                    .singleNews{
+                        .text{
+                            font-size: 16px;
+                        }
+                    }
+
+                    .footerLinks ul{
+                        li{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
     }
 }}
