@@ -14,13 +14,27 @@ const App = () => {
   return (
     <div>
       <Navbar/>
+      <section id="home">
       <Home/>
+      </section>
+      <section id="cards">
       <Cards/>
+      </section>
+      <section id="tours">
       <Tours/>
+      </section>
+      <section id="discount">
       <Discount/>
+      </section>
+      <section id="review">
       <Review/>
+      </section>
+      <section id="staff">
       <Staff/>
+      </section>
+      <section id="footer">
       <Footer/>
+      </section>
 
     </div>
   )
