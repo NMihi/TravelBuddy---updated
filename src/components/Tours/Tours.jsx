@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Tours.scss'
 
 //impot image
@@ -6,19 +6,27 @@ import Image from '../Assets/sigiriya.jpg'
 import Image1 from '../Assets/wipathu.jpg'
 import Image2 from '../Assets/tea.jpg'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 //import icons
 import { AiFillStar } from "react-icons/ai";
 
 const Tours = () => {
+
+  useEffect(() => {
+    Aos.init({duration:2000})
+  }, [])
+
   return (
     <div className="tours container section">
       <div className="secContainer">
-        <span className="secTitle">
+        <span data-aos='fade-up' data-aos-duration='2000' className="secTitle">
           Hot Tours
         </span>
 
         <div className="tourContainer">
-          <div className="singleTour grid">
+          <div data-aos='fade-up' data-aos-duration='2000' className="singleTour grid">
             <div className="imgDiv">
               <img src={Image}  />
             </div>
@@ -47,7 +55,7 @@ const Tours = () => {
 
             <span className='price'>$790</span>
           </div>
-          <div className="singleTour grid">
+          <div data-aos='fade-up' data-aos-duration='5000' className="singleTour grid">
             <div className="imgDiv">
               <img src={Image1}  />
             </div>
@@ -76,7 +84,7 @@ Highly recommend this tour for wildlife enthusiasts!"</p>
 
             <span className='price'>$790</span>
           </div>
-          <div className="singleTour grid">
+          <div data-aos='fade-up' data-aos-duration='8000' className="singleTour grid">
             <div className="imgDiv">
               <img src={Image2}  />
             </div>

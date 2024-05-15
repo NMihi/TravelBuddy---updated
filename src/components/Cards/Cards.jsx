@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './Cards.scss'
 //imported images
 import CardImage2 from '../Assets/CardImage2.jpg'
@@ -6,14 +6,22 @@ import CardImage from '../Assets/CardImage.jpg'
 import CardImage3 from '../Assets/CardImage3.jpg'
 import CardImage4 from '../Assets/CardImage4.jpg'
 
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 //imported icon
 import { AiOutlineSwapRight } from "react-icons/ai";
 
 const Cards = () => {
+
+  useEffect(() => {
+    Aos.init({duration:2000})
+  }, [])
+
   return (
     <div className='cards'>
-      <div className="cardContainer container grid">
-        <div className="singleCard">
+      <div data-aos='fade-up' data-aos-duration='2000' className="cardContainer container grid">
+        <div  className="singleCard">
           <div className="imgDiv">
              <img src={CardImage2}  />
           </div>
