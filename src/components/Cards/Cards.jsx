@@ -45,10 +45,10 @@ const Cards = () => {
           </div>
             <h4 className='textDiv'>Enjoy a very good morning in a tea plantaion. </h4>
         </div>
-          <div className="spanText flex">
+        </div> 
+        <div data-aos='fade-up' data-aos-duration='2500' className="spanText flex">
           Other Tours <AiOutlineSwapRight  className='icon'/>
           </div>
-        </div> 
     </div>
   )
 }
