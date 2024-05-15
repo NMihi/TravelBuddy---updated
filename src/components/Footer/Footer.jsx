@@ -1,6 +1,9 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 
 import './Footer.scss'
+
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 //import icons
 import { HiPhone } from "react-icons/hi";
@@ -13,11 +16,16 @@ import { AiOutlineTwitter } from "react-icons/ai";
 import { AiFillInstagram } from "react-icons/ai";
 
 const Footer = () => {
+
+  useEffect(() =>{
+    Aos.init({duration:2000})
+  },[])
+
   return (
     <div className="footer">
       <div className="secContainer container">
         <div className="content grid">
-          <div className="row">
+          <div data-aos='fade-up' data-aos-duration='2000' className="row">
             <div className="spanText">
               CONTACT US
             </div>
@@ -43,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="row">
+          <div data-aos='fade-up' data-aos-duration='3000'  className="row">
             <div className="spanText">
               POPULAR NEWS
             </div>
@@ -70,7 +78,7 @@ const Footer = () => {
             
           </div>
 
-          <div className="row">
+          <div data-aos='fade-up' data-aos-duration='4000' className="row">
             <div className="spanText">
               QUICK LINKS
             </div>

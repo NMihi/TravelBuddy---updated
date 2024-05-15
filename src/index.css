@@ -112,3 +112,18 @@ img{
 
     }
 }
+
+::selection{
+    background: var(--secHoverColor);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width: 13px;
+    background: var(--primaryColor);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--primaryColor);
+    border-radius: 10px;
+}

@@ -43,12 +43,12 @@ const Cards = () => {
           <div className="imgDiv">
              <img src={CardImage4}  />
           </div>
-          <h4 className='textDiv'>Enjoy a very good morning in a tea plantaion. </h4>
+            <h4 className='textDiv'>Enjoy a very good morning in a tea plantaion. </h4>
         </div>
-        <div className="spanText flex">
+          <div className="spanText flex">
           Other Tours <AiOutlineSwapRight  className='icon'/>
-        </div>
-      </div>
+          </div>
+        </div> 
     </div>
   )
 }

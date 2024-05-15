@@ -30,7 +30,7 @@ const Tours = () => {
             <div className="imgDiv">
               <img src={Image}  />
             </div>
-            <div className="tourInfo">
+            <div data-aos='fade-up' data-aos-duration='3500' className="tourInfo">
               <span className="tourTitle">
                 SriLanka,Sigiriya
               </span>
@@ -55,11 +55,11 @@ const Tours = () => {
 
             <span className='price'>$790</span>
           </div>
-          <div data-aos='fade-up' data-aos-duration='5000' className="singleTour grid">
+          <div data-aos='fade-right' data-aos-duration='5000' className="singleTour grid">
             <div className="imgDiv">
               <img src={Image1}  />
             </div>
-            <div className="tourInfo">
+            <div data-aos='fade-up' data-aos-duration='3500' className="tourInfo">
               <span className="tourTitle">
                 Sri Lanka, Wipathu Tour
               </span>
@@ -84,11 +84,11 @@ Highly recommend this tour for wildlife enthusiasts!"</p>
 
             <span className='price'>$790</span>
           </div>
-          <div data-aos='fade-up' data-aos-duration='8000' className="singleTour grid">
+          <div data-aos='fade-left' data-aos-duration='8000' className="singleTour grid">
             <div className="imgDiv">
               <img src={Image2}  />
             </div>
-            <div className="tourInfo">
+            <div data-aos='fade-up' data-aos-duration='3500'className="tourInfo">
               <span className="tourTitle">
                 Kandy,Badulla,SriLanka
               </span>

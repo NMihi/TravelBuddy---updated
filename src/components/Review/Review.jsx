@@ -1,6 +1,8 @@
-import React from 'react'
-
+import React, {useEffect} from 'react'
 import './Review.scss'
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 //import image
 import Imagerev from '../Assets/review.jpg'
@@ -8,15 +10,20 @@ import Imagerev2 from '../Assets/review2.jpg'
 import Imagerev3 from '../Assets/review3.jpg'
 
 const Review = () => {
+
+  useEffect (() => {
+    Aos.init({duration:2000})
+  }, [])
+
   return (
     <div className="review section">
       <div className="secContainer">
-        <span className="secTitle">
+        <span data-aos='fade-up' data-aos-duration='2000' className="secTitle">
           what people say
         </span>
 
         <div className="reviewContainer container grid">
-          <div className="singleReview">
+          <div data-aos='fade-right' data-aos-duration='2500' className="singleReview">
             <div className="imgDiv">
               <img src={Imagerev} />
             </div>
@@ -31,7 +38,7 @@ const Review = () => {
             </div>
           </div>
 
-          <div className="singleReview">
+          <div data-aos='fade-up' data-aos-duration='3000' className="singleReview">
             <div className="imgDiv">
               <img src={Imagerev2} />
             </div>
@@ -46,7 +53,7 @@ const Review = () => {
             </div>
           </div>
 
-          <div className="singleReview">
+          <div data-aos='fade-left' data-aos-duration='3500' className="singleReview">
             <div className="imgDiv">
               <img src={Imagerev3} />
             </div>
